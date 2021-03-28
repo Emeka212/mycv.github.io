@@ -1,0 +1,237 @@
+*{
+    box-sizing: border-box;
+}
+li{list-style: none;}
+body{
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+.container{
+    width: 820px;
+    border-radius: 2px;
+    box-shadow: 0px 40px 50px 5px gray;
+    background: #ffffff;
+    overflow: hidden;
+    margin: 50px 0;
+}
+.container .top_section{
+    width: 100%;
+    height: 325px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+.container .top_section .my_img{
+   width: 40%;
+   height: 100%;
+   background: #ccc;
+   overflow: hidden;
+}
+.container .top_section .my_img img{
+    width: 100%;
+}
+.container .top_section .my_details{
+   width: 60%;
+   height: 100%;
+   padding: 30px;
+   background: #252525;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+}
+.top_section .my_details div h1{
+    font-size: 45px;
+    text-transform: uppercase;
+    color: #ffcc01;
+    margin-bottom: 10px;
+    margin-left: -1px;
+}
+.top_section .my_details div span{
+    font-size: 20px;
+}
+.my_details div.nxt_info {
+    display: flex;
+    width: 100%;
+    /*background: red; */
+    justify-content: space-between;
+}
+.nxt_info div:nth-child(2){
+    width: 200px;
+    display: flex;
+    align-items: flex-end;
+}
+.nxt_info div:nth-child(1) li h2,
+.nxt_info div:nth-child(2) li h2 {
+    font-size: 15px;
+    margin: 10px 0 10px 0;
+    color: #ffffffcf;
+}
+.nxt_info div:nth-child(1) li span,
+.nxt_info div:nth-child(2) li span {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: #ffffffcf;
+}
+.container .bottom_section{
+    width: 100%;
+    /* padding: 0 20px 20px 20px; */
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.bottom_section .left_row{
+     /*background: red; */
+     /*margin-left: 20px;*/
+    padding: 0 0 0px 20px;
+    width: 40%;
+}
+.left_row .Aboutme_box{
+    width: 100%;
+    margin-top: -30px;
+    background: #ebebeb;
+}
+.left_row .Aboutme_box h2{
+    background: #ffcc01;
+    font-size: 35px;
+    padding: 15px 0 15px 15px;
+    margin: 0;
+}
+.left_row .Aboutme_box li{
+    padding: 15px;
+    color: #555;
+    line-height: 25px;
+    word-spacing: 5px;
+}
+.left_row .education{
+    margin-top: 50px;
+    padding-left: 15px;
+}
+.left_row .education h2{
+   
+}
+.left_row .education .Edu_one,
+.left_row .education .Edu_two{
+    margin: 15px 0 20px;
+}
+.left_row .education .Edu_one span,
+.left_row .education .Edu_two span{
+   color: #555;
+}
+.left_row .education .Edu_one .details,
+.left_row .education .Edu_two .details{
+    margin-top: 10px;
+    line-height: 20px;
+    font-size: 15px;
+}
+.left_row .language{
+    padding-left: 15px;
+    margin-top: 50px;
+}
+.left_row .language h2{
+
+}
+/*critical*/
+.left_row .language div{
+    display: flex;
+}
+/*ends critical*/
+.left_row .language .english,
+.left_row .language .igbo,
+.left_row .language .yoruba{
+    margin-top: 10px;
+    justify-content: space-between;
+    /*background: red;*/
+}
+.left_row .language .english li,
+.left_row .language .igbo li,
+.left_row .language .yoruba li{
+    background: gold;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    margin: 0 2.5px;
+}
+.left_row .language li.none{
+    background: #555;
+}
+.footer{
+    height: 20px;
+    margin-top: 100px;
+    background: gold;
+}
+
+
+.bottom_section .right_row{
+    /*background: green; */
+    padding: 30px;
+    padding-left: 50px;
+    width: 60%;
+}
+.right_row .Experience div{
+    margin-top: 20px;
+}
+.right_row .Experience div span.title{
+    font-weight: bold;
+    line-height: 25px;
+    color: #000000cc;
+}
+.right_row .Experience div span.details{
+    line-height: 25px;
+    color: #555;
+}
+.right_row .skills{
+    margin-top: 50px;
+}
+.right_row .skills .skills_box{
+    display: flex;
+    flex-wrap: wrap;
+}
+.right_row .skills .skills_box .box{
+   width: 40%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0 10% 10px 0;
+   padding-right: 10px;
+   /*background: red;*/
+} 
+.right_row .skills .skills_box .box div{
+    display: flex;
+}
+.right_row .skills .skills_box .box div li{
+    width: 15px;
+    height: 15px;
+    background: gold;
+    border-radius: 50px;
+    margin-left: 5px;
+} 
+.right_row .skills .skills_box .box div li.none{
+    background: #555;
+}
+.right_row .refference{
+    margin-top: 30px;
+}
+.right_row .refference div.ref_box{
+    display: flex;
+    justify-content: space-between;
+}
+.right_row .refference div.ref_box div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 25px;
+}
+.right_row .refference div.ref_box div span.title{
+    color: #555;
+}
+
+/*for all h2 text*/
+h2{
+    color: #000000cc;
+}
